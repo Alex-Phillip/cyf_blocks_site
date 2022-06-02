@@ -1,0 +1,214 @@
+.html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* NAV MENU */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 890px;
+    right: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.bar-one {
+    display: block;
+    width: 35px;
+    height: 8px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
+.bar-two {
+    display: block;
+    width: 35px;
+    height: 8px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: crimson;
+}
+
+.bar-three {
+    display: block;
+    width: 35px;
+    height: 8px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 100vw) {
+    .menu {
+        position: fixed;
+        left: -100%;
+        background-color: transparent;
+        width: 30vw;
+        text-align: center;
+        transition: 0.5s;
+        margin-left: 60vw;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar-one {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar-two {
+        transform: translateY(4.5px) rotate(45deg);
+    }
+
+    .hamburger.active .bar-three {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.nav-current {
+    margin-left: 170px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: overline;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.nav-current:hover {
+    color: crimson;
+}
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: overline;
+    /* margin-right: 10px; */
+    color: whitesmoke;
+}
+.nav-link:hover {
+    color: crimson;
+    text-decoration: overline;
+}
+
+/* nav menu */
+
+/* IMAGE CAROUSEL (BACKGROUND) */
+
+.image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+/* image carousel (background) */
+
+/* TEXT CAROUSEL */
+
+.text-one {
+    position: relative;
+    float: left;
+    left: 170px;
+    bottom: 805px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+}
+.text-one:hover {
+    opacity: 1;
+}
+
+.text-two {
+    position: relative;
+    float: left;
+    left: 180px;
+    bottom: 920px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+}
+.text-two:hover {
+    opacity: 1;
+    color: crimson;
+}
+
+/* text carousel */
+
+/* CAROUSEL SIDE BUTTONS */
+
+.nav-side-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    bottom: 622px;
+}
+
+.side-buttons {
+    background-color: transparent;
+    font-size: 60px;
+    border-style: none;
+    color: crimson;
+    text-decoration: none;
+    opacity: 0.87;
+}
+
+.side-buttons:hover {
+    color: whitesmoke;
+}
+
+.left {
+    padding-left: 25px;
+}
+
+.right {
+    padding-right: 25px;
+}
+
+/* carousel side buttons */
+
+/* GITHUB LINK */
+
+.git {
+    position: relative;
+    float: right;
+    bottom: 532px;
+    right: 15px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+/* github link */
