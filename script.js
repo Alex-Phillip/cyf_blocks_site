@@ -75,6 +75,3 @@ document.getElementById('button-right').addEventListener('click', (event) => {
   element_text_two3.innerText = two[0];
 
 });
-
-// 
-
